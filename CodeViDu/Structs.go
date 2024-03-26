@@ -2,21 +2,16 @@ package main
 
 import "fmt"
 
-// type Vertex struct {
-// 	x int
-// 	y int
-// }
+type Vertex struct {
+	x int
+	y int
+}
 
 // func main() {
 // 	fmt.Println(Vertex{1, 2})
 // }
 
 //////Struct Fields
-
-// type Vertex struct {
-// 	X int
-// 	Y int
-// }
 
 // func main() {
 // 	v := Vertex{1, 2}
@@ -25,14 +20,22 @@ import "fmt"
 // }
 
 /////Pointers to structs
-type Vertex struct {
-	x int
-	y int
-}
+
+// func main() {
+// 	v := Vertex{4, 5}
+// 	p := &v
+// 	p.x = 1e7
+// 	fmt.Println(v)
+// }
+///////Struct Literals
+
+var (
+	v1 = Vertex{2, 2}
+	v2 = Vertex{x: 3}
+	v3 = Vertex{}
+	p  = &Vertex{1, 1}
+)
 
 func main() {
-	v := Vertex{4, 5}
-	p := &v
-	p.x = 1e7
-	fmt.Println(v)
+	fmt.Println(v1, p, v2, v3)
 }
