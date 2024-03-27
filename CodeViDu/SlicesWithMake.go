@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	//Hàm make cấp phát một mảng chứa các phần tử được khởi tạo
 	a := make([]int, 7)
 	printSlice("a", a)
 

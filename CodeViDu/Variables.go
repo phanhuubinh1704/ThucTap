@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+////////////////////////////////
+
 // var a, java, golang bool
 
 // func main() {
@@ -16,13 +18,13 @@ import "fmt"
 // 	var c, python, java = true, false, "yes"
 // 	fmt.Println(i, j, c, python, java)
 // }
-
+///////////////////////////////
 var k = 3
 
 func main() {
 	var i, j int = 1, 2
 
-	c, python, java := true, false, "no!"
+	c, python, java := true, false, "no"
 
 	fmt.Println(i, j, k, c, python, java)
 }

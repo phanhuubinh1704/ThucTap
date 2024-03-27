@@ -38,7 +38,6 @@ import (
 // 	}
 
 // }
-
 ////////////////////////Switch evaluation order
 // func main() {
 // 	fmt.Println("When is Wednesday ?")
